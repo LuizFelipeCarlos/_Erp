@@ -1,0 +1,78 @@
+unit uQuery;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, IBX.IBCustomDataSet, IBX.IBQuery,
+  uDtmConexao;
+
+type
+  TTDtmQuery = class(TDataModule)
+    TQuery: TIBQuery;
+  private
+    FCompQuery: TIBQuery;
+    FConBDados: TDtmConexao;
+    { Private declarations }
+    property CompQuery: TIBQuery read FCompQuery write FCompQuery;
+    property ConBDados: TDtmConexao read FConBDados write FConBDados;
+    procedure AbreTransacao;
+
+  public
+    { Public declarations }
+    constructor Create;
+    procedure Configura;
+    procedure Consulta(Query: String);
+    destructor Destroy;
+  end;
+
+var
+  TDtmQuery: TTDtmQuery;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+{$R *.dfm}
+{ TTDtmQuery }
+{ TTDtmQuery }
+
+constructor TTDtmQuery.Create;
+begin
+  Configura;
+end;
+
+procedure TTDtmQuery.AbreTransacao;
+begin
+  ConBDados.FechaConexao;
+end;
+
+procedure TTDtmQuery.Configura;
+begin
+  CompQuery:= TIBQuery.Create(nil); /// teste property e componente
+  conBDados:= TDtmConexao.Create;
+
+  with CompQuery do
+  begin
+    Database:= conBDados.TDtbConexao;
+    Transaction:= conBDados.TTrasacao;
+  end;
+end;
+
+procedure TTDtmQuery.Consulta(Query: String);
+begin
+  AbreTransacao;
+  with CompQuery do
+  begin
+    Close;
+    SQL.Add(Query);
+    Open;
+  end;
+end;
+
+destructor TTDtmQuery.Destroy;
+begin
+  ConBDados.Destroy;
+  ConBDados.Free;
+  CompQuery.Free;
+end;
+
+end.

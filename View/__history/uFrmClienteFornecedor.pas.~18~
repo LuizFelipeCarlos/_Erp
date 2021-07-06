@@ -1,0 +1,82 @@
+unit uFrmClienteFornecedor;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, uFrmPesquisa
+  , Datasnap.DBClient;
+
+type
+  TfrmClienteFornecedor = class(TForm)
+    pnlDados: TPanel;
+    edtNome: TEdit;
+    edtNomeComercial: TEdit;
+    edtCnpjCpf: TEdit;
+    edtInscricaoRg: TEdit;
+    edtCodMunicipal: TEdit;
+    edtSuframa: TEdit;
+    pnlEndereco: TPanel;
+    edtEndereco: TEdit;
+    edtNumero: TEdit;
+    edtComplemento: TEdit;
+    edtBairro: TEdit;
+    edtCep: TEdit;
+    edtCidade: TEdit;
+    cbbEstado: TComboBox;
+    pnlContato: TPanel;
+    edtEmail: TEdit;
+    edtTelefone: TEdit;
+    pnlObservacao: TPanel;
+    lblObservacao: TLabel;
+    mmoObservacao: TMemo;
+    pnlBotoes: TPanel;
+    btnSalvar: TButton;
+    btnAlterar: TButton;
+    ccbClienteFornecedor: TCheckBox;
+    ccbInativo: TCheckBox;
+    btnPesquisa: TButton;
+    procedure btnPesquisaClick(Sender: TObject);
+  private
+    FPesquisa: TFrmPesquisa;
+    { Private declarations }
+    property Pesquisa: TFrmPesquisa read FPesquisa write FPesquisa;
+    procedure PopulaCampos(clienteDataSouce: TClientDataSet);
+  public
+    { Public declarations }
+
+  end;
+
+var
+  frmClienteFornecedor: TfrmClienteFornecedor;
+
+implementation
+
+{$R *.dfm}
+
+{ TfrmClienteFornecedor }
+
+
+{ TfrmClienteFornecedor }
+procedure TfrmClienteFornecedor.btnPesquisaClick(Sender: TObject);
+//var
+  //TelaPesquisa: TFrmPesquisa;
+begin
+  //TelaPesquisa:= TFrmPesquisa.Create(nil);
+  //TelaPesquisa.CarregaCliente;
+  //TelaPesquisa.ShowModal;
+
+  Pesquisa:= TFrmPesquisa.Create(nil);
+  Pesquisa.CarregaCliente;
+  //PopulaCampos(Pesquisa.AbreTela);
+  pesquisa.AbreTela;
+  edtNome.Text:= Pesquisa.cds.FieldByName('Nome').AsString;
+end;
+
+
+procedure TfrmClienteFornecedor.PopulaCampos(clienteDataSouce: TClientDataSet);
+begin
+  edtNome.Text:= clienteDataSouce.FieldByName('Nome').ToString;
+end;
+
+end.

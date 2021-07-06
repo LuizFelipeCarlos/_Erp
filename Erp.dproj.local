@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/11/02 21:20:58.000.896,=C:\Users\Home\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/11/03 23:55:27.000.724,=C:\Users\Home\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/04/22 19:30:33.000.637,=C:\Users\Home\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/04/22 23:59:50.000.006,C:\Users\Home\Documents\4iti\_Erp\View\fmrPrincipal.pas=C:\Users\Home\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/04/22 23:59:50.000.007,C:\Users\Home\Documents\4iti\_Erp\View\fmrPrincipal.dfm=C:\Users\Home\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/04/23 00:00:13.000.778,C:\Users\Home\Documents\4iti\_Erp\Erp.dproj=C:\Users\Home\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/04/28 11:56:45.000.771,=C:\Users\Home\Documents\4iti\_Erp\Unit2.pas</Transaction>
+    <Transaction>2021/04/28 12:55:23.000.776,C:\Users\Home\Documents\4iti\_Erp\View\uFrmClienteFornecedor.pas=C:\Users\Home\Documents\4iti\_Erp\Unit2.pas</Transaction>
+    <Transaction>2021/04/28 12:55:23.000.777,C:\Users\Home\Documents\4iti\_Erp\View\uFrmClienteFornecedor.dfm=C:\Users\Home\Documents\4iti\_Erp\Unit2.dfm</Transaction>
+    <Transaction>2021/04/28 12:55:50.000.705,C:\Users\Home\Documents\4iti\_Erp\View\uFrmPrincipal.dfm=C:\Users\Home\Documents\4iti\_Erp\View\fmrPrincipal.dfm</Transaction>
+    <Transaction>2021/04/28 12:55:50.000.705,C:\Users\Home\Documents\4iti\_Erp\View\uFrmPrincipal.pas=C:\Users\Home\Documents\4iti\_Erp\View\fmrPrincipal.pas</Transaction>
+    <Transaction>2021/04/28 14:02:18.000.636,=C:\Users\Home\Documents\4iti\_Erp\Unit2.pas</Transaction>
+    <Transaction>2021/04/28 14:03:37.000.060,C:\Users\Home\Documents\4iti\_Erp\View\uFrmConfiguracao.dfm=C:\Users\Home\Documents\4iti\_Erp\Unit2.dfm</Transaction>
+    <Transaction>2021/04/28 14:03:37.000.060,C:\Users\Home\Documents\4iti\_Erp\View\uFrmConfiguracao.pas=C:\Users\Home\Documents\4iti\_Erp\Unit2.pas</Transaction>
+    <Transaction>2021/04/28 18:36:26.000.847,=C:\Users\Home\Documents\4iti\_Erp\Unit2.pas</Transaction>
+    <Transaction>2021/04/28 19:26:41.000.314,C:\Users\Home\Documents\4iti\_Erp\Unit2.pas=C:\Users\Home\Documents\4iti\_Erp\View\uFrmPesquisa.pas</Transaction>
+    <Transaction>2021/04/28 19:26:41.000.314,C:\Users\Home\Documents\4iti\_Erp\Unit2.dfm=C:\Users\Home\Documents\4iti\_Erp\View\uFrmPesquisa.dfm</Transaction>
+    <Transaction>2021/04/30 12:16:08.000.964,=C:\Users\Home\Documents\4iti\_Erp\Unit1.pas</Transaction>
+    <Transaction>2021/04/30 12:17:03.000.703,C:\Users\Home\Documents\4iti\_Erp\uDtmConexao.dfm=C:\Users\Home\Documents\4iti\_Erp\Unit1.dfm</Transaction>
+    <Transaction>2021/04/30 12:17:03.000.703,C:\Users\Home\Documents\4iti\_Erp\uDtmConexao.pas=C:\Users\Home\Documents\4iti\_Erp\Unit1.pas</Transaction>
+    <Transaction>2021/04/30 12:18:13.000.172,C:\Users\Home\Documents\4iti\_Erp\DA\uDtmConexao.dfm=C:\Users\Home\Documents\4iti\_Erp\uDtmConexao.dfm</Transaction>
+    <Transaction>2021/04/30 12:18:13.000.172,C:\Users\Home\Documents\4iti\_Erp\DA\uDtmConexao.pas=C:\Users\Home\Documents\4iti\_Erp\uDtmConexao.pas</Transaction>
+    <Transaction>2021/04/30 13:32:20.000.725,=C:\Users\Home\Documents\4iti\_Erp\Unit1.pas</Transaction>
+    <Transaction>2021/04/30 13:34:19.000.068,C:\Users\Home\Documents\4iti\_Erp\DA\uQuery.pas=C:\Users\Home\Documents\4iti\_Erp\Unit1.pas</Transaction>
+    <Transaction>2021/04/30 13:34:19.000.068,C:\Users\Home\Documents\4iti\_Erp\DA\uQuery.dfm=C:\Users\Home\Documents\4iti\_Erp\Unit1.dfm</Transaction>
+    <Transaction>2021/05/10 21:31:06.000.279,=C:\Users\Home\Documents\4iti\_Erp\Unit1.pas</Transaction>
+    <Transaction>2021/05/10 21:31:44.000.839,C:\Users\Home\Documents\4iti\_Erp\uValidacoes.pas=C:\Users\Home\Documents\4iti\_Erp\Unit1.pas</Transaction>
+    <Transaction>2021/05/12 00:30:40.000.134,C:\Users\Home\Documents\4iti\_Erp\Model\uValidacoes.pas=C:\Users\Home\Documents\4iti\_Erp\uValidacoes.pas</Transaction>
+  </Transactions>
+</BorlandProject>

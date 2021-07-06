@@ -1,0 +1,54 @@
+unit uFrmConfiguracao;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  uFrmClienteFornecedor;
+
+type
+  TFrmConfiguracao = class(TForm)
+    pnlBotoes: TPanel;
+    btnClienteFornecedor: TButton;
+    Button2: TButton;
+    procedure btnClienteFornecedorClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    FDestroyTela: TObject;
+    { Private declarations }
+    destructor Destroy;
+
+  public
+    { Public declarations }
+    property DestroyTela: TObject read FDestroyTela write FDestroyTela;
+  end;
+
+var
+  FrmConfiguracao: TFrmConfiguracao;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmConfiguracao.btnClienteFornecedorClick(Sender: TObject);
+var
+  telaCliFor: TfrmClienteFornecedor;
+
+begin
+  telaCliFor.Create(telaCliFor);
+  telaCliFor.ShowModal;
+end;
+
+
+destructor TFrmConfiguracao.Destroy;
+begin
+  inherited;
+end;
+
+procedure TFrmConfiguracao.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  //Destroy;
+end;
+
+end.

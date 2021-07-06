@@ -1,0 +1,10 @@
+object DtmConexao: TDtmConexao
+  OldCreateOrder = False
+  Height = 150
+  Width = 215
+  object TDtbConexao: TIBDatabase
+    ServerType = 'IBServer'
+    Left = 48
+    Top = 40
+  end
+end

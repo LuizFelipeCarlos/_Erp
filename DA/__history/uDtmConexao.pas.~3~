@@ -1,0 +1,59 @@
+unit uDtmConexao;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, IBX.IBDatabase;
+
+type
+  TDtmConexao = class(TDataModule)
+    TDtbConexao: TIBDatabase;
+  private
+    FCompConexao: TIBDatabase;
+    FTransacao: TIBTransaction;
+    { Private declarations }
+    property CompConexao: TIBDatabase read FCompConexao write FCompConexao;
+
+    constructor Create;
+    procedure Configuracao;
+
+  public
+    { Public declarations }
+    property Transacao: TIBTransaction read FTransacao write FTransacao;
+
+    procedure AbreConexao;
+    procedure FechaConexao;
+  end;
+
+var
+  DtmConexao: TDtmConexao;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+{ TDtmConexao }
+
+procedure TDtmConexao.AbreConexao;
+begin
+
+end;
+
+procedure TDtmConexao.Configuracao;
+begin
+
+end;
+
+constructor TDtmConexao.Create;
+begin
+
+end;
+
+procedure TDtmConexao.FechaConexao;
+begin
+
+end;
+
+end.

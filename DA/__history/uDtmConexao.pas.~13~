@@ -45,7 +45,7 @@ begin
 
   with TDtbConexao do
   begin
-      DatabaseName:= 'C:\Users\Felipe\Documents\Projetos\_Erp\Banco\ERP.FDB';
+      DatabaseName:= 'C:\Users\Home\Documents\BancoDados\ERP.FDB';
       Params.Values['user_name']:= 'sysdba';
       Params.Values['password']:= 'masterkey';
       Params.Values['lc_ctype']:= 'WIN1252';

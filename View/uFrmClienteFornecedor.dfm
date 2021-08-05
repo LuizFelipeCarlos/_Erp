@@ -79,16 +79,16 @@ object frmClienteFornecedor: TfrmClienteFornecedor
     BorderStyle = bsSingle
     TabOrder = 1
     object edtEndereco: TEdit
-      Left = 8
+      Left = 136
       Top = 16
-      Width = 369
+      Width = 345
       Height = 21
       TabOrder = 0
       Text = 'Endere'#231'o'
     end
     object edtNumero: TEdit
-      Left = 383
-      Top = 16
+      Left = 8
+      Top = 43
       Width = 98
       Height = 21
       TabOrder = 1
@@ -96,32 +96,32 @@ object frmClienteFornecedor: TfrmClienteFornecedor
     end
     object edtComplemento: TEdit
       Left = 8
-      Top = 43
-      Width = 217
+      Top = 70
+      Width = 369
       Height = 21
       TabOrder = 2
       Text = 'Complemento'
     end
     object edtBairro: TEdit
-      Left = 231
+      Left = 112
       Top = 43
-      Width = 250
+      Width = 193
       Height = 21
       TabOrder = 3
       Text = 'Bairro'
     end
     object edtCep: TEdit
-      Left = 8
-      Top = 70
-      Width = 137
+      Left = 40
+      Top = 16
+      Width = 90
       Height = 21
       TabOrder = 4
       Text = 'CEP'
     end
     object edtCidade: TEdit
-      Left = 151
-      Top = 70
-      Width = 226
+      Left = 311
+      Top = 43
+      Width = 170
       Height = 21
       TabOrder = 5
       Text = 'Cidade'
@@ -161,6 +161,14 @@ object frmClienteFornecedor: TfrmClienteFornecedor
         'SP'
         'SE'
         'TO')
+    end
+    object btnPesqCep: TButton
+      Left = 8
+      Top = 16
+      Width = 26
+      Height = 21
+      Caption = '...'
+      TabOrder = 7
     end
   end
   object pnlContato: TPanel

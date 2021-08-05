@@ -36,6 +36,7 @@ type
     ccbClienteFornecedor: TCheckBox;
     ccbInativo: TCheckBox;
     btnPesquisa: TButton;
+    btnPesqCep: TButton;
     procedure btnPesquisaClick(Sender: TObject);
   private
     FPesquisa: TFrmPesquisa;

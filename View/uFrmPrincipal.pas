@@ -47,9 +47,12 @@ procedure TForm1.imgConfigClick(Sender: TObject);
 var
   CriaTela: TFrmConfiguracao;
 begin
-  CriaTela:= TFrmConfiguracao.Create(nil);
-  CriaTela.ShowModal;
-  CriaTela.Free;
+  try
+    CriaTela:= TFrmConfiguracao.Create(nil);
+    CriaTela.ShowModal;    
+  finally
+    CriaTela.Free;   
+  end;
 end;
 
 procedure TForm1.imgMenuClick(Sender: TObject);

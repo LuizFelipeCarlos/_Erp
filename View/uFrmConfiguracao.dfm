@@ -20,10 +20,6 @@ object FrmConfiguracao: TFrmConfiguracao
     Height = 201
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = 232
-    ExplicitTop = 56
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object btnClienteFornecedor: TButton
       Left = 8
       Top = 8

@@ -16,9 +16,9 @@ begin
   Application.Initialize;
   //ReportMemoryLeaksOnShutdown := True;
   Application.MainFormOnTaskbar := True;
-  //Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TfrmClienteFornecedor, frmClienteFornecedor);
-  //Application.CreateForm(TFrmConfiguracao, FrmConfiguracao);
+  Application.CreateForm(TFrmConfiguracao, FrmConfiguracao);
   Application.CreateForm(TFrmPesquisa, FrmPesquisa);
   Application.CreateForm(TDtmConexao, DtmConexao);
   Application.CreateForm(TTDtmQuery, TDtmQuery);

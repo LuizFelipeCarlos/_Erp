@@ -33,9 +33,12 @@ var
   telaCliFor: TfrmClienteFornecedor;
 
 begin
-  telaCliFor:= TfrmClienteFornecedor.Create(nil);
-  telaCliFor.ShowModal;
-  telaCliFor.Free;
+  try
+    telaCliFor:= TfrmClienteFornecedor.Create(nil);
+    telaCliFor.ShowModal;
+  finally
+    telaCliFor.Free;
+  end;
 end;
 
 

@@ -38,6 +38,7 @@ type
     btnPesquisa: TButton;
     btnPesqCep: TButton;
     procedure btnPesquisaClick(Sender: TObject);
+    procedure edtCepEnter(Sender: TObject);
   private
     FPesquisa: TFrmPesquisa;
     { Private declarations }
@@ -68,6 +69,11 @@ begin
   Pesquisa.FechaTela;
 end;
 
+
+procedure TfrmClienteFornecedor.edtCepEnter(Sender: TObject);
+begin
+  ShowMessage('Deu Enter');
+end;
 
 procedure TfrmClienteFornecedor.PopulaCampos;
 begin

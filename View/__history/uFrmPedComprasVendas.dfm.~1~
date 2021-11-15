@@ -1,0 +1,91 @@
+object PedComprasVendas: TPedComprasVendas
+  Left = 0
+  Top = 0
+  Align = alClient
+  ClientHeight = 475
+  ClientWidth = 764
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlDadosCliFor: TPanel
+    Left = 0
+    Top = 0
+    Width = 385
+    Height = 99
+    TabOrder = 0
+    object edtCliFor: TEdit
+      Left = 8
+      Top = 8
+      Width = 329
+      Height = 21
+      TabOrder = 0
+      Text = 'Nome'
+    end
+    object btnPesqCliFor: TButton
+      Left = 343
+      Top = 6
+      Width = 34
+      Height = 25
+      Caption = '...'
+      TabOrder = 1
+    end
+    object cbbContato: TComboBox
+      Left = 8
+      Top = 35
+      Width = 369
+      Height = 21
+      TabOrder = 2
+      Text = 'Contato'
+    end
+    object edtTelefone: TEdit
+      Left = 8
+      Top = 62
+      Width = 121
+      Height = 21
+      TabOrder = 3
+      Text = 'Telefone'
+    end
+    object edtEmail: TEdit
+      Left = 135
+      Top = 62
+      Width = 242
+      Height = 21
+      TabOrder = 4
+      Text = 'Email'
+    end
+  end
+  object pnlTotais: TPanel
+    Left = 272
+    Top = 392
+    Width = 492
+    Height = 83
+    TabOrder = 1
+  end
+  object pnlItens: TPanel
+    Left = 0
+    Top = 96
+    Width = 764
+    Height = 297
+    TabOrder = 2
+  end
+  object pnlCondicoes: TPanel
+    Left = 0
+    Top = 392
+    Width = 273
+    Height = 83
+    TabOrder = 3
+  end
+  object pnlInfoCredito: TPanel
+    Left = 383
+    Top = 0
+    Width = 381
+    Height = 99
+    TabOrder = 4
+  end
+end

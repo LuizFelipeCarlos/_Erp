@@ -1,0 +1,34 @@
+unit uFrmPedComprasVendas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TPedComprasVendas = class(TForm)
+    pnlDadosCliFor: TPanel;
+    pnlTotais: TPanel;
+    pnlItens: TPanel;
+    pnlCondicoes: TPanel;
+    edtCliFor: TEdit;
+    btnPesqCliFor: TButton;
+    cbbContato: TComboBox;
+    edtTelefone: TEdit;
+    edtEmail: TEdit;
+    pnlInfoCredito: TPanel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  PedComprasVendas: TPedComprasVendas;
+
+implementation
+
+{$R *.dfm}
+
+end.

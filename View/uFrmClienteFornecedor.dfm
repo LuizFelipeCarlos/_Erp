@@ -117,6 +117,7 @@ object frmClienteFornecedor: TfrmClienteFornecedor
       Height = 21
       TabOrder = 4
       Text = 'CEP'
+      OnEnter = edtCepEnter
     end
     object edtCidade: TEdit
       Left = 311

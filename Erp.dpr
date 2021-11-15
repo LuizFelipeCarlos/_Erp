@@ -8,7 +8,8 @@ uses
   uFrmPesquisa in 'View\uFrmPesquisa.pas' {FrmPesquisa},
   uDtmConexao in 'DA\uDtmConexao.pas' {DtmConexao: TDataModule},
   uQuery in 'DA\uQuery.pas' {TDtmQuery: TDataModule},
-  uValidacoes in 'Model\uValidacoes.pas';
+  uValidacoes in 'Model\uValidacoes.pas',
+  uFrmPedComprasVendas in 'View\uFrmPedComprasVendas.pas' {PedComprasVendas};
 
 {$R *.res}
 
@@ -22,5 +23,6 @@ begin
   Application.CreateForm(TFrmPesquisa, FrmPesquisa);
   Application.CreateForm(TDtmConexao, DtmConexao);
   Application.CreateForm(TTDtmQuery, TDtmQuery);
+  Application.CreateForm(TPedComprasVendas, PedComprasVendas);
   Application.Run;
 end.

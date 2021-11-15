@@ -121,6 +121,10 @@
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="Model\uValidacoes.pas"/>
+        <DCCReference Include="View\uFrmPedComprasVendas.pas">
+            <Form>PedComprasVendas</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

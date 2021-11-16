@@ -1,7 +1,6 @@
 object PedComprasVendas: TPedComprasVendas
   Left = 0
   Top = 0
-  Align = alClient
   ClientHeight = 475
   ClientWidth = 763
   Color = clBtnFace
@@ -11,6 +10,7 @@ object PedComprasVendas: TPedComprasVendas
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesigned
   PixelsPerInch = 96
   TextHeight = 13
   object pnlDadosCliFor: TPanel
@@ -35,6 +35,7 @@ object PedComprasVendas: TPedComprasVendas
       Height = 25
       Caption = '...'
       TabOrder = 1
+      OnClick = btnPesqCliForClick
     end
     object cbbContato: TComboBox
       Left = 8
@@ -68,6 +69,32 @@ object PedComprasVendas: TPedComprasVendas
     Height = 83
     BorderStyle = bsSingle
     TabOrder = 1
+    object lblValorTotalPedido: TLabel
+      Left = 21
+      Top = 40
+      Width = 159
+      Height = 24
+      Caption = 'R$ Total Pedido'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -20
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+    end
+    object edtValorTotalPedido: TEdit
+      Left = 232
+      Top = 40
+      Width = 249
+      Height = 32
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -20
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+    end
   end
   object pnlItens: TPanel
     Left = 0
@@ -145,6 +172,22 @@ object PedComprasVendas: TPedComprasVendas
     Height = 83
     BorderStyle = bsSingle
     TabOrder = 3
+    object cbbFormaPagto: TComboBox
+      Left = 8
+      Top = 16
+      Width = 145
+      Height = 21
+      TabOrder = 0
+      Text = 'Forma Pagamento'
+    end
+    object cbbCondicaoPagto: TComboBox
+      Left = 9
+      Top = 43
+      Width = 145
+      Height = 21
+      TabOrder = 1
+      Text = 'Condi'#231#227'o Pagamento'
+    end
   end
   object pnlInfoCredito: TPanel
     Left = 496

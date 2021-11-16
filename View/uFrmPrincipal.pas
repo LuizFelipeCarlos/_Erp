@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.Menus,
-  Vcl.Imaging.pngimage, Vcl.StdCtrls, uFrmConfiguracao;
+  Vcl.Imaging.pngimage, Vcl.StdCtrls, uFrmConfiguracao, uFrmPedComprasVendas;
 
 type
   TForm1 = class(TForm)
@@ -28,6 +28,7 @@ type
     lblConfig: TLabel;
     procedure imgMenuClick(Sender: TObject);
     procedure imgConfigClick(Sender: TObject);
+    procedure imgVendasClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -67,6 +68,17 @@ begin
       pnlMenu.Visible:= false;
       imgMenu.Left:= 0;
     end;
+end;
+
+procedure TForm1.imgVendasClick(Sender: TObject);
+var telaVendas: TPedComprasVendas;
+begin
+  try
+    telaVendas:= TPedComprasVendas.Create(nil);
+    telaVendas.ShowModal;
+  finally
+    telaVendas.Free;
+  end;
 end;
 
 end.

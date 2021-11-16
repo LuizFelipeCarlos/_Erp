@@ -914,6 +914,7 @@ object Form1: TForm1
           08B6FF03DE0FBE4621E568C80000000049454E44AE426082}
         Proportional = True
         ShowHint = False
+        OnClick = imgVendasClick
         ExplicitLeft = 0
         ExplicitTop = 0
         ExplicitWidth = 97

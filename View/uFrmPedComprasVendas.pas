@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Data.DB,
-  Vcl.Grids, Vcl.DBGrids;
+  Vcl.Grids, Vcl.DBGrids, uFrmPesquisa;
 
 type
   TPedComprasVendas = class(TForm)
@@ -28,6 +28,11 @@ type
     edtProduto: TEdit;
     btnAdicaoProduto: TButton;
     DBGrid1: TDBGrid;
+    cbbFormaPagto: TComboBox;
+    cbbCondicaoPagto: TComboBox;
+    lblValorTotalPedido: TLabel;
+    edtValorTotalPedido: TEdit;
+    procedure btnPesqCliForClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,5 +45,18 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TPedComprasVendas.btnPesqCliForClick(Sender: TObject);
+var
+  pesquisa: TFrmPesquisa;
+begin
+  try
+    pesquisa:= TFrmPesquisa.Create(nil);
+    pesquisa.AbreTela;
+  finally
+    pesquisa.FechaTela;
+  end;
+
+end;
 
 end.
